@@ -7,6 +7,8 @@
     <title>理财宝</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -39,7 +41,7 @@
     </header>
     <div class="container">
         <!-- html5大纲规范：section和article最好都有标题 -->
-        <div class="transaction">
+        <div class="transaction clearfix">
             <div class="trans-content">
                 <div class="trans-data">
                     <span>平台累计成交金额</span>
@@ -57,14 +59,17 @@
             </div>
         </div>
         <div class="ad">
-            <div class="item">
-                <img src="img/ad001.png">
-            </div>
-            <div class="item">
-                <img src="img/ad002.png">
-            </div>
-            <div class="item">
-                <img src="img/ad003.png">
+            <!-- 主样式和主题样式 -->
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="img/ad001.png">
+                </div>
+                <div class="item">
+                    <img src="img/ad002.png">
+                </div>
+                <div class="item">
+                    <img src="img/ad003.png">
+                </div>
             </div>
         </div>
         <section class="feature">
@@ -257,6 +262,9 @@
         </ul>
         <p>北京某互联网金融公司 版权所有 2015-2016</p>
     </footer>
+    <script src='http://libs.baidu.com/jquery/1.11.3/jquery.min.js'></script>
+    <script src='js/vendor/owl.carousel.2.1.0/owl.carousel.min.js'></script>
+    <script src='js/main.js'></script>
 </body>
 
 </html>
