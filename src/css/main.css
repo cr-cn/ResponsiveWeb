@@ -372,7 +372,8 @@ header .main ul li a.active {
     /*CSS#计算方法，动态，三等分这是宽度，减去2rem，再减去1rem*/
     /*边框不加算在宽度内*/
     /*box-sizing: border-box;*/
-    width: calc(33.33333333% - 3rem);
+    /*firefox中若小数点后六位则会进位处理,firebug*/
+    width: calc(33.33333% - 3rem);
     padding: 1rem;
     font-size: 1.4rem;
     background-color: #fff;
